@@ -1,0 +1,29 @@
+<!-- DOM - Document Object Model [Realiability, modularity, browser caching]-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn DOM</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>  
+    <a href="index.html"><h2 style="text-align: center;"><b> Go to Homepage </b></h2></a>
+    
+    <!-- Inline event handling -->
+    <button onclick="console.log('Button was Clicked');" class="button1">
+        Click Me!
+    </button>
+    <button ondblclick="console.log('Button was doubleClicked');" class="button2">
+        Double Click Me!
+    </button>
+    <div class="box" onmouseover="console.log('Inside the box');"></div>
+
+    <button class="button3" > Button 3</button>
+
+    <button class="screenMode" > Change Screen Mode</button>
+
+    <script src="events.js"></script>
+</body>
+</html>

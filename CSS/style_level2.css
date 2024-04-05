@@ -1,0 +1,65 @@
+/* Box model in CSS */
+/* Content > Height,width > Padding > Border > Margin  */
+/* Display property: inline/ block/ inline-block/ none, visibility property   */
+/* RGBA: A for Alpha = Opacity */
+
+*{
+    margin:0px;
+    border:0px;
+    font-size: 25px;
+    color:white;
+}
+
+body{
+    background-color:rgba(0, 0, 255, 0.6); /* RGBA */
+}
+
+#test{
+    font-size:25px;
+    height:100px;
+    background-color: aquamarine;
+    padding-left:50px;
+    /* padding: 2px 4px 4px 2px; */
+    /* border-width:20px;
+    border-style:dotted;
+    border-color:darkblue; */
+    border: 20px dotted darkcyan;
+    border-radius:20px; /* For rounded border */
+    margin:40px;
+
+    text-align:center; /* sets accordingly parent element div not whole screen */
+    
+}
+h1{
+    height:50px;
+}
+
+#circle{
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+    border: 10px darkred;
+    border-radius:50%;
+}
+
+#amazon{
+    /* display:none; vanishes the element */
+    /* visibility: hidden; makes it invisible but keeps the space*/ 
+    display:inline-block; /* acts like an inline element */
+    height: 60px;
+    background-color: #0f1111;
+    border: 1px solid white;
+}
+
+a{
+    text-decoration: none;
+    margin-right: 200px;
+}
+
+#logo{
+    color:#f08804;
+}
+
+#search{
+    background-color:#f08804;
+}

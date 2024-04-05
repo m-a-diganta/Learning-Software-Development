@@ -1,0 +1,29 @@
+h1{
+    background-color: azure;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: darkblue;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    background-color:beige;
+    font-size: 25px;
+    font-weight:bold;
+    color:brown;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    text-align: center;
+    height: 300px;
+    width: 200px;
+    background-color: chocolate;
+    background-image: url(task5.jpg);
+    background-size: cover;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}

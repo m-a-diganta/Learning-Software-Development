@@ -1,0 +1,152 @@
+<!-- 
+# HTML is not case sensitive 
+# Tags can be semantic and non-semantic => should use semantic more often
+# Benefits of semantic tags - readable code, SEO, user experience
+# Use Toggle word wrap from command pallette 
+# Elements can be Block or Inline elements
+-->
+
+<!DOCTYPE html> <!-- The version -->
+<html lang="en">  <!-- lang is an attribute -->
+<head>  <!-- contains the metadata, not shown on the webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+</head>
+<body>
+    <header>
+        <pre>
+            <h1> <b><i><u>Let's learn HTML</u></i></b></h1>
+        </pre>
+    </header>
+    <hr> <!-- Horizontal ruler -->
+
+    <main>
+        <section> <!-- For creating sections -->
+            <h3>PROFILE:</h3>
+            <p> <big>My name's Alfessani Diganta.</big><small>I am a CSE graduate from BRAC University. I have passed my HSC from Dhaka College and SSC from Monipur High School & College.</small></p> 
+        </section>
+        <section>
+            EDUCATION: BRAC UNiversity | BSc. in Computer Science and Engineering
+        </section>
+        <section>
+            EXPERIENCE: BRAC University | STUDENT TUTOR
+        </section>
+
+        <article> <!-- For writing an article-->
+            My story: How I started
+        </article>
+
+        <aside> <!-- content aside main content(ads) => SEO wont detect-->
+            <a href="https://www.google.com" target="_main"> <img src="https://mydmi.imgix.net/cards/standard/Google_Ads_CARD.jpg?crop=entropy&fit=crop&fm=jpg&h=1200&ixlib=php-3.3.1&q=50&w=1600&s=2e757c189bdfa9a7833c503ce34266d8" alt="Ads" height="200"> </a> <!-- opens in new tab for target="_main"-->
+        </aside>
+
+    </main>
+
+    <a href="https://www.facebook.com/alfessanidiganta/"> My Facebook Profile </a> <!-- Anchor tag - goes to a new link (Absolute link) --> 
+    <br>
+    <a href="/about.html"> About me </a> <!-- Can move to another page as well (Relative link) --> <br>
+
+    <!-- Div(non-semantic / block element) tag is a container for other HTML elements-->
+    <div style="background-color: skyblue;">
+        <p>Projects</p>
+        <p>Skills</p>
+    </div>
+    <!-- Span works like Div but for Inline elements -->
+    <span style="background-color: greenyellow;">
+        Reference
+    </span>
+
+
+    <!-- List can be ordered or unordered-->
+
+    <UL>
+        <li>SSC</li>
+        <ul>
+            <li>Grade</li>
+            <li>Division</li>
+        </ul>
+        <li>HSC</li>
+    </UL>
+    <ol>
+        <li>Skill1</li>
+        <li>Skill2</li>
+    </ol>
+
+    <!-- Table -->
+    <table>
+        <caption>Qualifications</caption>
+        <thead> <!--Wrap the table head-->
+        <tr>
+            <th colspan="3">Background</th>
+        </tr>
+        <tr>
+            <th>Degree</th>
+            <th>Institute</th>
+            <th>Grade</th>
+        </tr>
+        </thead>
+        <tbody><!--Wrap the table body-->
+        <tr>
+            <td>HSC</td>
+            <td>Dhaka College</td>
+            <td>5.00</td>
+        </tr>
+        <tr>
+            <td>SSC</td>
+            <td>Monipur High School & College</td>
+            <td>5.00</td>
+        </tr>
+        </tbody>
+    </table> <br>
+
+    <!-- Forms are used to collect data from user(signup/login/contact)-->
+    <h4>Registration Forrm</h4>
+    <form action="/action.php">
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password"> <br><br>
+
+    <!-- Labels -->
+    <label for="id1">
+        <input type="radio" value="class X" name="class" id="id1">Class X
+    </label>
+    <label for="id2">
+        <input type="radio" value="class XI" name="class" id="id2">Class XI
+    </label>
+    <br><br>
+    
+    <!-- Checkbox -->
+    <label for="math">
+        <input type="checkbox" value="math" name="subject" id="101">Math
+    </label>
+    <label for="phy">
+        <input type="checkbox" value="phy" name="subject" id="102">Physics
+    </label> <br><br>
+
+    <textarea name="feedback" id="101" placeholder="Enter Here..." rows="2">Feedback</textarea> <br><br>
+
+    <!-- Dropdown Menu -->
+    <select name="city" id="city">
+        <option value="Dhaka">Dhaka</option>
+        <option value="Chittagong">Chittagong</option>
+    </select> <br><br>
+
+    <input type="submit" value="submit"> <br><br>
+
+    </form>
+
+    <video src="unravel.mov">Unravel</video> <br>
+
+    <!-- Linking another website or its content-->
+    <iframe src="https://www.wikipedia.org/" height="300" width="500"></iframe>
+    <br>
+
+    <h2 title="I'm a header">The title Attribute</h2>
+
+    <footer>
+        <pre>
+            <h2>About Me</h2>
+        </pre>
+    </footer>
+</body>
+</html>

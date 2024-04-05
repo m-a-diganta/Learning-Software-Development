@@ -1,0 +1,67 @@
+/* Relative units: %,em,rem,vh,vw */
+/* Position: static/relative/absolute/fixed */
+/* Z index: 0(auto),1,2,-1,2 - in case of overlapping */
+/* Background image,size: cover/contain/auto */
+
+#box1{
+    height:100px;
+    width:200px;
+    background-color: rgb(43, 146, 151);
+    font-size: 25px;
+}
+
+#box2{
+    height:60%; /* Relative to the parent div size */
+    width:5rem; /* Relative: 5 multiplied by font size of root/body text */
+    background-color:brown;
+    margin-left:20%;
+    font-size:0.6em; /* Relative to the parent div's text font size */
+}
+
+#outer{
+    position:relative;
+    background-color: antiquewhite;
+}
+
+.box{
+    height:100px;
+    width:100px;
+    background-color:brown;
+    font-size: 25px;
+    border: 2px solid black;
+    display:inline-block;
+}
+
+#box3{
+    position:static; /* default position - no properties work */
+}
+
+#box4{
+    position:relative; /* relative position from its actual position*/
+    z-index: 1;
+    top: 10px;
+    left:20px;
+    /* bottom:10px; */
+}
+
+#box5{
+    position:absolute; /* absolute position - closest positioned ancestor must be non-static - removed from the flow*/
+    top:20px;
+}
+
+#box6{
+    position:fixed; /* fixed position - removed from flow - and postioned according to browser*/
+    bottom: 10px ;
+    left: 0px;
+    width: 100vw;
+    /* Used for footers and nav bars that do not move from window*/
+}
+
+#box7{
+    position:sticky; /* sticks to screen when scrolling*/
+    left:100px;
+    top: 10px ;
+    z-index: 1;
+    background-image: url("rand2.jpg");
+    background-size: cover; /* contain or auto[default] */
+}

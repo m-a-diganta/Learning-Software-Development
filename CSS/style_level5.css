@@ -1,0 +1,95 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#box1{
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    border: 2px solid black;
+    background-color: chartreuse;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+
+    /* Transition Properties */
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:ease-in;
+    transition-delay: 0ms;
+    /* transition: all 2s ease-in 1ms; */
+}
+#box1:hover{
+    background-color: darkgreen;
+    font-size: 35px;
+    transform: rotate(45deg); /* Transform Properties */
+    /* transform: scale(1,2);  */
+    /* transform: translate(10px,20px); */
+    /* transform: skew(45deg); */
+}
+#box1:active{
+    background-color:cyan;
+}
+
+#box2{
+    color:floralwhite;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    border: 2px solid black;
+    background-color:midnightblue;
+    margin: 0 auto;
+    position:fixed;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 50%;
+
+}
+
+@keyframes changeColor{
+    from{
+        background-color: midnightblue;
+        left:10px;
+    }
+    to {
+        background-color: brown;
+        left:500px;
+    }
+}
+#box2:hover{
+    animation-name: changeColor;
+    animation-duration: 2s;
+    animation-timing-function:ease-in; 
+    animation-delay: 2ms;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;  /* depedns on prev and last position*/
+}
+#box2:active{
+    background-color:indianred;
+}
+
+#loader{
+    height:100px;
+    width:100px;
+    border: 10px solid #6D435A;
+    border-top: 10px solid #B1EDE8;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

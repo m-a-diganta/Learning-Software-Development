@@ -1,0 +1,77 @@
+/* Color property: foreground,background */
+/* The command which is written below has higher priority */
+/* Text properties: text-align, text decoration, font-weight,font family, font-size, line-height, text-transform */
+/* Search "mdn property-name" on google to know in detail */
+/* Units in CSS: Absolute [96 px = 1 inch, cm, mm],Relative   */
+
+*{
+    font-family:'Courier New', Courier, monospace;
+    font-size:larger;
+}/* Universal selector: applies to everything */
+
+body{
+    background-color: aliceblue;
+}
+
+h1{ 
+    text-align:center; /*Text align */
+    color:rgb(88, 36, 36); /* RGB color System */
+    background-color:#bac8de; /* HEX color System */
+    text-decoration: blue dotted overline; /* line-through,underline */
+    font-weight: bolder;
+    font-size: 50px; /* changing font size unit */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height:70px ;
+    text-transform:capitalize;
+}
+
+p1{
+    color:darkblue; /* Element selector */
+    font-weight: 600;
+}
+
+#second{
+    color:darkgreen; /* Id selector*/
+    background-color: burlywood;
+}
+
+.body{
+    color:azure; /* class selector*/
+    background-color:rgb(39, 26, 17);
+}
+
+button{
+    color: rgb(100,50,50); 
+    background-color:aquamarine;
+}
+
+a{
+    text-decoration: None; /* Removing underline for link*/
+}
+
+ /* Task1 */
+ #box{
+    background-color: blue;
+ }
+/* Task2 */
+.heading{
+    color:red;
+}
+
+/* Task3 */
+#task3{
+    background-color: green;
+}
+
+/* Task3 */
+.task4{
+    text-align:center;
+    text-transform: uppercase;
+    font-family:'Times New Roman';
+}
+#outer{
+    font-size:25px;
+}
+#inner{
+    font-size:10px;
+}

@@ -1,0 +1,77 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+div{
+    height: 60px;
+    width: 100px;
+    display:inline-block;
+    border: 2px solid black;
+}
+
+#container{
+    width: 800px;
+    height: 400px; /* every item tries to fit itself in the flexbox container till their contents/font size allow */
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content:center; /* Along main-axis */
+    /* flex-wrap:wrap; */
+    align-items:flex-start; /* Along cross-axis */
+    align-content:center;
+}
+
+#box1{
+    background-color: aqua;
+}
+#box2{
+    background-color:rgb(223, 131, 131);
+    height: 100px;
+}
+#box3{
+    background-color:rgb(153, 153, 228);
+    /* align-self: flex-end;  */
+}
+#box4{
+    background-color:rgb(238, 240, 152);
+    flex-grow: 2;
+}
+#box5{
+    background-color:lawngreen;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+}
+
+#navBar{
+    display:none;
+    height:50px;
+    width: 100vw;
+    background-color: chartreuse;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+a{
+    color:floralwhite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    background-color: red;
+    padding: 4px;
+    border: 2px solid darkgreen;
+}
+
+/* For different window size/device */
+
+@media(max-width: 600px){
+    *{
+        font-size: 10px;
+        text-align: left;
+    }
+}
