@@ -1,0 +1,18 @@
+{
+    "name": "Alfessani",
+    "age": 25,
+    "city": "Dhaka",
+    "country": "Bangladesh",
+    "skills": [
+        "Python",
+        "JavaScript",
+        "HTML",
+        "CSS"
+    ],
+    "is_student": true,
+    "education": {
+        "degree": "Bachelor's",
+        "field": "Computer Science",
+        "university": "University of Dhaka"
+    }
+}
