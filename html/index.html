@@ -6,7 +6,7 @@
 # Elements can be Block or Inline elements
 -->
 
-<!DOCTYPE html> <!-- The version -->
+<!DOCTYPE html> <!-- The current version: HTML5 -->
 <html lang="en">  <!-- lang is an attribute -->
 <head>  <!-- contains the metadata, not shown on the webpage -->
     <meta charset="UTF-8">
@@ -103,8 +103,10 @@
     <!-- Forms are used to collect data from user(signup/login/contact)-->
     <h4>Registration Forrm</h4>
     <form action="/action.php">
-        <input type="text" placeholder="username">
-        <input type="password" placeholder="password"> <br><br>
+        <label for="userName">Username</label>
+        <input type="text" id="userName" placeholder="username"><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="password"> <br><br>
 
     <!-- Labels -->
     <label for="id1">
@@ -148,5 +150,7 @@
             <h2>About Me</h2>
         </pre>
     </footer>
+
+    <p>Need to know more about: Canvas, Media, SVG, APIs</p>
 </body>
 </html>
