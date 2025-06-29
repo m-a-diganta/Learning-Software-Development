@@ -403,3 +403,74 @@ print("Difference between date1 and date2:", delta.days, "days")
 
 new_date = date1 + timedelta(days=5, hours=3, minutes=30)
 print("New Date after adding timedelta:", new_date)
+
+print("\n######################################################################################################################\n")
+
+# Working with Modules
+
+# from Calculator_Module import add, subtract, divide (adds only specific functions)
+import Calculator_Module as calc
+print("Addition of 5 and 10 using Calculator_Module:", calc.add(5, 10))
+print("Subtraction of 10 and 5 using Calculator_Module:", calc.subtract(10, 5))
+
+# Built-in Modules: math, os, sys, datetime, json, csv, random, re, collections, itertools
+import os
+print("Current Working Directory:", os.getcwd())  
+print("List of files in current directory:", os.listdir('.'))  
+
+import sys
+print("Python Version:", sys.version)  
+print("Python Executable Path:", sys.executable)  
+
+print("\n\n")
+import http.client
+conn = http.client.HTTPSConnection("dummyjson.com")
+conn.request("GET", "/products")
+response = conn.getresponse()
+print("Response Status:", response.status)
+print("Response Reason:", response.reason)
+# read only 20 data 
+data = response.read(500)
+print("Response Data:", data.decode('utf-8'))  # decode bytes to string
+conn.close()
+conn.request("GET", "/todos")
+response = conn.getresponse()
+print("Response Status:", response.status)
+print(response.read())
+conn.close()
+
+print("\n\n")
+import subprocess
+# Running a shell command
+result = subprocess.run(['ls', '-l'], capture_output=True, text=True)
+result2 = subprocess.run(['python3', '--version'], capture_output=True, text=True)
+print("Command Output:\n", result.stdout)
+if result.stderr:
+    print("Command Error:\n", result.stderr)
+print("Python Version Output:\n", result2.stdout)
+if result2.stderr:
+    print("Python Version Error:\n", result2.stderr)
+
+print("\n")
+import hashlib # for hashing 
+# Hashing a string using SHA-256
+hash_object = hashlib.sha256(b'RandomPass123') # b'' indicates a byte string
+hex_dig = hash_object.hexdigest() # converts the hash to a hexadecimal string
+print("SHA-256 Hash:", hex_dig)
+
+print("\n######################################################################################################################\n")
+
+# User defined Multi-file Module / Package Development
+# Package Name = Folder Name = Namespace => a file named __init__.py is required as root file  => import all modules in the init.py file
+# Package Structure:
+# my_package/
+# ├── __init__.py
+# ├── Max_module.py
+# ├── Min_module.py
+
+import my_package 
+print("Max of 5, 10, 15 using Max_module:", my_package.Max_module.max(5, 10, 15))
+print("Min of 6, 4, 15 using Min_module:", my_package.Min_module.min(6, 4, 15))
+
+
+
