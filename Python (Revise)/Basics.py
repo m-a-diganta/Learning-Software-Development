@@ -472,5 +472,45 @@ import my_package
 print("Max of 5, 10, 15 using Max_module:", my_package.Max_module.max(5, 10, 15))
 print("Min of 6, 4, 15 using Min_module:", my_package.Min_module.min(6, 4, 15))
 
+print("\n######################################################################################################################\n")
+
+# Third party modules/ packages
+
+# Web Development Frameworks: Django, Flask, FastAPI, Requests 
+# Data Analysis and Manipulation: NumPy, Pandas, Seaborn, Matplotlib
+# Machine Learning, AI and Deep Learning: Scikit-learn, TensorFlow, Keras, PyTorch
+# Data Science: Scipy, Jupyter, Sympy 
+# Database: SQLAlchemy, PyMongo, SQLite3, PyMySQL
+# Web Scraping/ API and Parsing: BeautifulSoup, Scrapy, Requests-HTML
+# Testing Frameworks: PyTest, Unittest, Nose, tox
+# Web Automation: Celery, invoke, Fabric
+# File Handling: PyFilesystem, Watchdog, Pathlib
+# Security and Authentication: PyJWT, Authlib, Passlib, bcrypt
+# Development and Debugging: ipdb, black 
+# Command Line Interface (CLI): Click, Typer, Argparse
+# Virtual Environment Management: virtualenv, pipenv, poetry
+# Logging and Monitoring: Loguru, Sentry, structlog
+#GUI Development Libraries: Tkinter, PyQt, Kivy 
+#Game Development Libraries: Pygame, Panda3D
+#Networking Libraries: Socket, Twisted, ZeroMQ
+#Automation Libraries: Selenium, PyAutoGUI, Requests-HTML   
+#Cryptography Libraries: PyCrypto, Cryptography, Hashlib
+
+# Implementing a third-party package: Matplotlib
+# pip3 install matplotlib/ brew install python-matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0, 10, 100)  
+y = np.sin(x)  
+plt.plot(x, y, label='Sine Wave', color='blue')
+plt.title('Sine Wave Example')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.legend()
+plt.grid(True)
+plt.savefig('sine_wave.png')  # Save the plot as an image file
+plt.show()  
+
+
 
 
