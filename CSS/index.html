@@ -1,7 +1,18 @@
-<!-- CSS: Cascading Style Sheet (For style)-->
+<!-- CSS: Cascading Style Sheet (For style) => means bottom codes get priority, so our main custom css file link should be under bootstrap or other template links -->
 <!-- Selector, property, Value, Statement terminator(;), Style: Inline, Internal, External -->
 <!-- Inline style has priority over internal and external-->
 <!-- Selector:Universal *{},Element h1{},Id Selector #Id{},Class Selector .class{}-->
+<!-- Specificity: Which one gets priority, which one will be applied -->
+<!--
+Specificity Order:
+1. Inline styles 
+2. #IDs 
+3. .Classes, :pseudo-classes, [attributes] 
+4. Elements/ tags, ::pseudo-elements
+5. Universal selector (*)
+6. !important (use sparingly, as it overrides all other styles)
+Specificity Calculation: Specificity is calculated based on the number of selectors in each category. The more specific the selector, the higher its priority. 
+-->
 <!-- comment shortcut=> cntrl+/ -->
 
 <!DOCTYPE html>
@@ -14,13 +25,13 @@
 </head>
 <body> 
     <h1>Learn CSS</h1>
-    <p1 id="first">This is first paragraph</p1><br><br>
+    <p1 id="first">This is first paragraph</p1><br><br> 
     <p1 id="second">This is second paragraph</p1><br><br>
 
     <p1 class="body">Lets start learning CSS</p1><br><br>
     <p1 id="body"> HTML & CSS </p1><br><br>
 
-    <button><a href="/task1.html" > Task 1 </a></button>
+    <button><a href="task1.html" > Task 1 </a></button>
     <button><a href="task2.html" > Task 2 </a></button>
     <button><a href="task3.html" > Task 3 </a></button>
     <button><a href="task4.html" > Task 4 </a></button>

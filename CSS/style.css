@@ -3,6 +3,30 @@
 /* Text properties: text-align, text decoration, font-weight,font family, font-size, line-height, text-transform */
 /* Search "mdn property-name" on google to know in detail */
 /* Units in CSS: Absolute [96 px = 1 inch, cm, mm],Relative   */
+/* Relative units: em, rem, vh, vw, vmin, vmax, %, px */
+
+/* 
+CSS Positioning:
+1. Static: Default, elements flow in the document.
+2. Relative: Positioned relative to its normal position.
+3. Absolute: moves it out of the document flow, positioned relative to its nearest positioned ancestor.
+4. Fixed: Positioned relative to the viewport, remains in the same place even when scrolling.
+5. Sticky: Acts like relative until a certain scroll point, then behaves like fixed.
+6. Float: Used to wrap text around images, but not recommended for layout.
+7. Z-index: Controls the stacking order of elements, higher values appear on top.
+*/
+
+/*
+CSS Combinators:
+1. Descendant Selector (space): Selects elements that are descendants of a specified element.
+2. Child Selector (>): Selects elements that are direct children of a specified element.
+3. Adjacent Sibling Selector (+): Selects an element that is immediately preceded by a specified element.
+4. General Sibling Selector (~): Selects all siblings of a specified element that follow it in the document.
+5. Grouping Selector (,): Groups multiple selectors to apply the same styles to all of them.
+6. Attribute Selector ([]): Selects elements based on the presence or value of an attribute.
+7. Pseudo-classes (:): Selects elements based on their state (e.g., :hover, :focus).
+8. Pseudo-elements (::): Selects a specific part of an element (e.g., ::before, ::after).
+*/
 
 *{
     font-family:'Courier New', Courier, monospace;

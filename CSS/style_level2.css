@@ -1,13 +1,22 @@
 /* Box model in CSS */
 /* Content > Height,width > Padding > Border > Margin  */
 /* Display property: inline/ block/ inline-block/ none, visibility property   */
+/* Color Types: Hexadecimal, RGB (e.g., rgb, RGBA, HSL, HSLA */
+/* Color Theory */
 /* RGBA: A for Alpha = Opacity */
+
+/* Using Custom Font */
+@font-face {
+    font-family: Agale;
+    src: url('./fonts/Agale.otf') format('truetype');   /* At first copy the ttf or otf file in the fonts folder */
+}
 
 *{
     margin:0px;
     border:0px;
     font-size: 25px;
     color:white;
+    font-family: Agale;
 }
 
 body{
@@ -31,7 +40,11 @@ body{
     
 }
 h1{
-    height:50px;
+    height:100px;
+    font-family: "Lavishly Yours", cursive; /* Using Google Font */
+    font-size: xxx-large;
+    font-weight: 600;
+    font-style: normal;
 }
 
 #circle{
