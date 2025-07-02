@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Django App</title>
+</head>
+<body>
+    <h1>Welcome to Demo Django App</h1>
+    <p>This is the Index page to show how Django renders an HTML page.</p>
+    <p>Visit the <a href="{% url 'prompt' %}">Prompt Page</a> to check how HTTPResponse works</p> 
+
+    <h1>Let's work with variables and filters</h1>
+    <p>Text filters for the line "{{line}}"</p>
+    <ul>
+        <li>Uppercase: {{ line|upper }}</li>
+        <li>Lowercase: {{ line|lower }}</li>
+        <li>Capitalize: {{ line|capfirst }}</li>
+        <li>Length: {{ line|length }}</li>
+        <li>Title: {{ line|title}}</li>
+        <li>Word Count: {{ line|wordcount }}</li>
+        <li>Cut 'j': {{ line|cut:"j" }}</li>
+        <li>Truncate Words (4): {{ line|truncatewords:4 }}</li>
+        <li>Truncate Chars (6): {{ line|truncatechars:6 }}</li>
+    </ul>
+
+    <p>Number filters for the number {{number}}</p>
+    <ul>
+        <li>Floatformat (2): {{ number|floatformat:2 }}</li>
+        <li>Add 100: {{ number|add:100 }}</li>
+        <li>Divisible by 3: {{ number|divisibleby:3 }}</li>
+    </ul>
+
+    <p>List filters for the list {{list}}</p>
+    <ul>
+        <li>Length: {{ list|length }}</li>
+        <li>First Element: {{ list|first }}</li>
+        <li>Last Element: {{ list|last }}</li>
+        <li>Join Elements: {{ list|join:", " }}</li>
+        <li>Slice (first 2): {{ list|slice:":2" }}</li>
+    </ul>
+
+</body>
+</html>
