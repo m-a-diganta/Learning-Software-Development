@@ -16,3 +16,20 @@ sol = Solution()
 print(sol.reverseSubArray([1, 2, 3, 4, 5], 2, 4))
 print(sol.reverseSubArray([8,2,5,3,1,7,8,4,5], 3, 7))
 
+# Efficient approach: (Recursion)
+class Solution:
+	def reverseSubArray(self, arr, l, r):
+		if l >= r:
+			return arr
+		temp = arr[l-1]
+		arr[l-1] = arr[r-1]
+		arr[r-1] = temp
+		return self.reverseSubArray(arr, l+1, r-1)
+
+sol = Solution()
+print(sol.reverseSubArray([1, 2, 3, 4, 5], 2, 4))
+print(sol.reverseSubArray([8,2,5,3,1,7,8,4,5], 3, 7))
+
+# Time Complexity : O(n)
+# Space Complexity : O(n) 
+		
