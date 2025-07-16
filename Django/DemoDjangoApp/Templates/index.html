@@ -39,5 +39,30 @@
         <li>Slice (first 2): {{ list|slice:":2" }}</li>
     </ul>
 
+    <p>Date and Time filters</p>
+    <ul>
+        <li>Current Date & Time: {{ my_date }}</li>
+        <li>Formatted Date: {{ my_date|date:"d-m-y" }}</li>
+        <li>Time left until my birthday: {{ fut_date|timeuntil }}</li>
+    </ul>
+
+    <p>Escape Filters</p>  {% comment %} means closing execution of any code like JS, HTML etc {% endcomment %}
+    <button onclick="{{ my_string|escapejs }}">Show Alert</button> {% comment %}  Shows an alert with the message "Hello, World!" if escapejs is not applied {% endcomment %}
+    <div>{{ my_html|safe }}</div> 
+    <div>{{ my_html|force_escape }}</div> 
+
+    <p>Conditional Variable: {{ cond_var }}</p>
+    <li>Conditional Variable with default: {{ cond_var|default:"No value provided" }}</li>
+    <li>Conditional Variable with default_if_none: {{ cond_var|default_if_none:"Not Found" }}</li>
+    <li>Conditional Variable Yes/No: {{ cond_dec|yesno:"Decision Taken, Decision not Taken" }}</li>
+
+    <p>Dictionary List Filters </p>
+    <ul>
+        <li>Dictionary: {{ dict_list}}</li>
+        <li>Sorted with age: {{ dict_list|dictsort:'age'}}</li>
+        <li>Sorted with age in reverse: {{ dict_list|dictsortreversed:'age'}}</li>
+    </ul>
+
+
 </body>
 </html>

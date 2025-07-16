@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template Tags</title>
+</head>
+<body>
+    <h1>{{title}}</h1>
+
+    <h2>If-Else condition in Django</h2>
+    {% if user.is_authenticated == True %}
+        <p>{{ user.name }} is logged in</p>
+    {% else %}
+        <p>Kindly log in</p>
+    {% endif %} 
+
+    <h2>For Loop in Django</h2>
+    {% for i in products %}
+        <p>{{ i.name }} - ${{ i.price }}</p>
+    {% empty %}
+        <p>No products available</p>
+    {% endfor %}
+
+    <h2>With Tag in Django</h2> {% comment %} To work with temporary variable in the template {% endcomment %}
+    {% with no_of_products=products|length %}
+        <p>Total number of products: {{ no_of_products }}</p>
+    {% endwith %}
+
+    <h2>Include Tag in Django</h2> {% comment %} To add Sub-View or child view {% endcomment %}
+    {% include 'sub-view1.html' with products=products %}
+    {% include 'sub-view2.html' with products=products %}
+
+    {% verbatim  %} Variables, Tags, Filters like {{title}} do not execute {% endverbatim  %}
+
+    <h2>Cycle Tag in Django</h2> {% comment %} Helps in style repetition{% endcomment %}
+    <ul>
+        {% for product in products %}
+            <li style="color:{% cycle 'red' 'blue' 'green' %}" >{{ product.name }} - ${{ product.price }}</li>
+        {% endfor %}
+    </ul>
+    
+
+    <h2>How CSRF Token works</h2>
+    <form method="post">
+        {% csrf_token %} {% comment %} Doesn't allow to submit without this{% endcomment %}
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="submit" value="Submit">
+    </form>
+    
+
+
+</body>
+</html>

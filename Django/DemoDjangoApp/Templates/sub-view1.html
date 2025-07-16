@@ -1,0 +1,52 @@
+<!-- sub-view1.html - Quick Stats Cards -->
+<div class="stats-section">
+    <style>
+        .stats-section {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat-card {
+            flex: 1;
+            min-width: 150px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+    </style>
+    
+    <div class="stat-card">
+        <div class="stat-number">Sub View 1</div>
+        <div class="stat-label">Total Views</div>
+    </div>
+    
+    <div class="stat-card">
+        <div class="stat-number">Sub View 1</div>
+        <div class="stat-label">Active Users</div>
+    </div>
+    
+    <div class="stat-card">
+        <div class="stat-number">Sub View 1</div>
+        <div class="stat-label">New Today</div>
+    </div>
+</div>
